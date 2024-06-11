@@ -1,0 +1,43 @@
+<h3>Informaçoes da venda</h3>
+<hr>
+<h5>Produtos</h5>
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th style="width: 200px;">Nome</th>
+            <th>Valor Produto</th>
+            <th>Quantidade</th>
+            <th>Valor Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{itens_produtos}}
+    </tbody>
+</table>
+
+<hr>
+<h5>Total da Venda</h5>
+<hr>
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th style="width: 200px;">Valor Venda</th>
+            <th>Valor Imposto</th>
+            <th>Descricão</th>
+            <th style="width: 200px;">data_cadastro</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{id}}</td>
+            <td>{{valor_venda}}</td>
+            <td>{{valor_venda_imposto}}</td>
+            <td>{{descricao}}</td>
+            <td>{{data_cadastro}}</td>
+        </tr>        
+    </tbody>
+</table>
+
+

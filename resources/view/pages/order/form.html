@@ -1,0 +1,87 @@
+<h1>{{title}}</h1>
+<hr>
+<section id="form">
+    <form id="formOrder" method="post" action="?page=1">
+        <div class="form-group">
+            <label>Buscar Produto</label>
+            <input type="text" id="product-search" class="form-control" placeholder="Digite o nome do produto">
+        </div>
+        <div id="selected-products-container" style="display:none;">
+            <table id="selected-products" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Valor Unitário</th>
+                        <th>Quantidade</th>
+                        <th>Valor do Imposto</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-group">
+            <label>Valor Venda</label>
+            <input type="float" class="form-control valor_bruto" name="valor_bruto" id="valor_bruto" value="{{valor_bruto}}" required>
+        </div>
+
+        <div class="form-group">
+            <label>Valor imposto</label>
+            <input type="int" class="form-control valor_imposto" id="valor_imposto" name="valor_imposto" value="{{valor_imposto}}" >
+        </div>
+
+        <div class="form-group">
+            <label>Descrição</label>
+            <textarea type="text" class="form-control" name="descricao" id="descricao" rows="3" required>{{descricao}}</textarea>
+        </div>
+
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </div>
+    </form>
+</section>
+<style>
+    /* Estilos adicionais para garantir que a lista de autocompletar seja exibida corretamente */
+    .ui-autocomplete {
+        max-height: 200px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 20px;
+        z-index: 1000; /* Garante que a lista esteja acima de outros elementos */
+        background-color: white; /* Garante que o fundo da lista seja branco */
+        border: 1px solid #ccc; /* Adiciona uma borda para a lista */
+    }
+    .ui-menu-item-wrapper {
+        padding: 10px; /* Adiciona padding aos itens da lista */
+    }
+    .selected-product {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .selected-product input {
+        width: 50px;
+        margin-left: 10px;
+    }
+    #selected-products-container {
+        display: none; /* Esconde o campo inicialmente */
+    }
+    .valor_bruto {
+        pointer-events: none;
+        opacity: 0.6; /* Opcional: pode diminuir a opacidade para indicar visualmente que o campo está desabilitado */
+        background-color: #e9ecef;
+    }
+    .valor_imposto {
+        pointer-events: none;
+        opacity: 0.6; /* Opcional: pode diminuir a opacidade para indicar visualmente que o campo está desabilitado */
+        background-color: #e9ecef;
+    }
+    .ui-helper-hidden-accessible{
+        display: none;
+    }
+</style>
+
+

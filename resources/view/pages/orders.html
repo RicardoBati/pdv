@@ -1,0 +1,21 @@
+<h1>Lista de Vendas</h1>
+<hr>
+
+<a href="{{URL}}/NovaVenda"><button class="btn btn-success">Nova Venda +</button></a>
+
+<br><br>
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th style="width: 200px;">Valor Venda</th>
+            <th>Valor Imposto</th>
+            <th>Descricão</th>
+            <th style="width: 200px;">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{itens}}
+    </tbody>
+</table>
+{{pagination}}

@@ -1,0 +1,23 @@
+<h1>Lista de Produtos</h1>
+<hr>
+
+<a href="{{URL}}/novoProduto"><button class="btn btn-success" id="novoProduto">Novo Produto +</button></a>
+
+<br><br>
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th style="width: 200px;">Nome</th>
+            <th>Preço Custo</th>
+            <th>Preço Venda</th>
+            <th>Quantidade</th>
+            <th>Tipo</th>
+            <th style="width: 200px;">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{itens}}
+    </tbody>
+</table>
+{{pagination}}

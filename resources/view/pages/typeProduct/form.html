@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<hr>
+<h3>Tipo de produtos</h3>
+<form id="formTipoProduto">
+    <input type="text" id="id_tipo_produto" class="d-none" value="{{id}}">
+    <div class="form-group">
+        <label>Tipo</label>
+        <input type="text" class="form-control" name="tipo_produto" id="tipo_produto" value="{{tipo_produto}}" required>
+    </div>
+
+    <div class="form-group">
+        <label>Tributação</label>
+        <input type="float" class="form-control" name="valor_imposto" id="valor_imposto"  value="{{valor_imposto}}" placeholder="0,00%" required>
+    </div>
+
+    <div class="form-group mt-3">
+        <button class="btn btn-success">Enviar</button>
+    </div>
+</form>

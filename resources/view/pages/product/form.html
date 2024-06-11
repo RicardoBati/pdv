@@ -1,0 +1,44 @@
+<h1>{{title}}</h1>
+<hr>
+<section id="form">
+    <h3>Produto</h3>
+    <form id="formproduct">
+        <input type="text" id="id_produto" class="d-none" value="{{id_produto}}">
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" class="form-control" name="nome" value="{{nome}}" required>
+        </div>
+
+        <div class="form-group">
+            <label>Preço Custo</label>
+            <input type="float" class="form-control" name="preco_custo" id="preco_custo" value="{{preco_custo}}" placeholder="0,00" required>
+        </div>
+
+        <div class="form-group">
+            <label>Preço Venda</label>
+            <input type="float" class="form-control" name="preco_venda" id="preco_venda" value="{{preco_venda}}" placeholder="0,00" required>
+        </div>
+
+        <div class="form-group">
+          <label>Quantidade</label>
+          <input type="int" class="form-control" name="quantidade" id="quantidade" value="{{quantidade}}" required>
+        </div>
+
+        <div class="form-group">
+          <label>Tipo Produto</label>
+          <select name="tipo_produto" class="form-select" required>
+            <option value="">Selecione um tipo</option>
+            {{options}}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Descricao</label>
+          <textarea type="text" class="form-control" name="descricao" rows="3" required>{{descricao}}</textarea>
+        </div>
+
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </div>
+    </form>
+  </section>
