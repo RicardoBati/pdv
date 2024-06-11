@@ -19,6 +19,9 @@ DB_USER=root
 DB_PASS=root
 DB_PORT=5435
 ```
+#### Banco de dados
+
+O DUMP do banco de dados se encontra na raiz do projeto (PGSQL)
 
 #### Composer
 Para executar esta aplicação é necessário rodar o Composer para que sejam criados os arquivos responsáveis pelo autoload das classes.
