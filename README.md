@@ -2,6 +2,16 @@
 
 Projeto de um ponto de venda online - PDV
 
+## Sobre
+O prejeto aborda:
+ + Cadastro de produto
+ + Cadastro do tipo do produto
+ + Realização da venda
+
+Realizado em PHP nativo(puro) <br/>
+Usando o conceito de MVC (Model,View,Controller) <br/>
+No front-end Bootstrap e Jquery
+
 ## Executar o projeto
 
 Depois de clonar o prejeto entre na pasta raiz (pdv) realize o passo a passo
